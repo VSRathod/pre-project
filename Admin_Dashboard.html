@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin page</title>
+  <style>
+    .navbar {
+      background: rgb(10, 119, 226);
+      background: linear-gradient(293deg, rgba(10, 119, 226, 0.9669117647058824) 0%, rgba(255, 255, 255, 1) 100%);
+    }
+  </style>
+  <link href="css\css\bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body class=" ">
+  <header class="bg-color ">
+    <nav class="navbar sidebar vertical-scroll ps-container ps-theme-default ps-active-y">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img style="max-width: 15%; border-radius: 40%;" src="img/home-logo.png"
+          alt="Home Image"></a>
+          <button class="navbar-toggler" type="button " data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-dark"></span>
+        </button>
+        <div>
+          <h1>Admin Dashboard</h1>
+        </div>
+        <h3><i class="bi bi-bell"></i><sup class="text-white bg-danger rounded-pill ">99+</sup></h3>
+        <h2><i class="bi bi-person"></i></h2>
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img style="max-width: 25%; border-radius: 40%;"
+                src="img/home-logo.png" alt="img"></h5>
+            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body bg-dark raunded">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Profile
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="" class="nav-link">edit profile</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Manage users
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="" class="nav-link">edit profile</a>
+                  </div>
+                </div>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="" class="nav-link">edit profile</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Apartment
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="" class="nav-link"> name edit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Payment
+                  </button>
+                </h2>
+                <div id="flush-collapsefour" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="" class="nav-link">addvance pay</a>
+                  </div>
+                </div>
+                <div id="flush-collapsefour" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="" class="nav-link">total Payment</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseThree">
+                    settings
+                  </button>
+                </h2>
+                <div id="flush-collapsefive" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="" class="nav-link">settings</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="" type="link" class="nav-link fs-3 text-center"><b>Logout</b></a>
+        </div>
+    </nav>
+  </header>
+  <section class="container-fluid p-0 ">
+    <div class=" bg-info">
+      <h1 class=" fs-1">
+        <marquee behavior="" direction="right">Welcome to Admin</marquee>
+      </h1>
+    </div>
+    <div class="container-fluid ">
+      <div class="row p-2 ">
+        <div class="col-sm-12 col-md-3 text-center rounded-pill card bg-warning" style="">
+          <div class="card-body">
+            <h1 class="card-title">Profile <i class="bi bi-person"></i></h1>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 text-center rounded-pill  card bg-success" style="">
+          <div class="card-body">
+            <h1 class="card-title">Manage user <i class="bi bi-people w-25"></i></h1>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 text-center rounded-pill card bg-primary" style="">
+          <div class="card-body">
+            <h1 class="card-title">Appartment <i class="bi bi-building-add"></i></h1>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 text-center rounded-pill card bg-danger" style="">
+          <div class="card-body">
+            <h1 class="card-title">Settings <i class="bi bi-gear"></i></h1>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid p-0">
+    <div>
+      <img src="img/graph.jpg" class="img-fluid w-100" alt="">
+    </div>
+
+  </section>
+
+
+  <script src="/js/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

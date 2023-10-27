@@ -9,52 +9,72 @@
          background: rgb(0,46,64);
          background: linear-gradient(293deg, rgba(0,46,64,1) 0%, rgba(0,212,255,1) 100%);
          width: 100%;
-         height: auto;
+         background-size: cover;
+        
+         }
+         .main{
+            
+            
          }
       </style>
       <link href="css\css\bootstrap.min.css" rel="stylesheet">
    </head>
    <body class="bg-img" >
-      <form class="row mt-2 mb-2 w-100">
-         <div class="container w-75 col-sm-12  ">
-         <div class="card p-2 bg-transparent rounded">
+       <div class="container w-75 p-4 col-sm-12 ">
+       <form class="">
+         <div class="card main  rounded shadow-lg  p-2  rounded">
             <h1 class="card-title" style="text-align: center;" >Registration form</h1>
             <div class="row g-3">
-               <div class="col col-md-6 col-sm-12">
+               <div class="col col-md-6 col-sm-12 ">
                   <label for="inputfirstn" class="form-label">First Name</label>
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                  <input type="text" class="form-control bg-transparent" placeholder="First name" aria-label="First name"required>
                </div>
                <div class="col col-md-6 col-sm-12">
                   <label for="inputlastn" class="form-label">Last Name</label>
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                  <input type="text" class="form-control bg-transparent" placeholder="Last name" aria-label="Last name"required>
                </div>
                <div class="col col-md-6 col-sm-12">
                   <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
+                  <input type="email" class="form-control bg-transparent" id="inputEmail4" placeholder="rathod@gmail.com">
+                  <div class="pl-4 pt-3 row col-md-6 col-sm-12">
+                     <div class="col ">
+                        <input class="col form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label bg-transparent" for="flexRadioDefault1"required>
+                          Male
+                        </label>
+                      </div>
+                      <div class="col form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label bg-transparent" for="flexRadioDefault2"required>
+                          Female
+                        </label>
+                        </div>
+                   </div>
                </div>
                <div class="col col-md-6 col-sm-12">
                   <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <input type="password" class="form-control bg-transparent" id="inputPassword4" placeholder="xxxxxxxx" required>
+                  <p class="discription text-danger"required>(The password should be at least eight characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ & )</p>
                </div>
                <div class="col col-md-6 col-sm-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <textarea class="form-control" id="inputAddress" placeholder="1234 Main St" rows="5"> 
+                  <label for="inputAddress" class="form-label">Address *</label>
+                  <textarea class="form-control bg-transparent" id="inputAddress" placeholder="1234 Main St" rows="4"required> 
                   </textarea>
                </div>
                <!-- <input type="text" > -->
                <div class="col col-md-6 col-sm-12">
                   <label for="inputAddress2" class="form-label">Address 2</label>
-                  <textarea class="form-control" id="inputAddress" placeholder="1234 Main St" rows="5"> 
+                  <textarea class="form-control bg-transparent" id="inputAddress" placeholder="1234 Main St" rows="4"> 
                   </textarea>
                </div>
                <!-- <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"> -->
                <div class="col col-md-6 col-sm-12">
                   <label for="inputnum" class="form-label">Phone No.</label>
-                  <input type="number" class="form-control" id="inputnum">
+                  <input type="number" class="form-control bg-transparent" id="inputnum" placeholder="9145xxxxxx" required>
                </div>
                <div class="col col-md-6 col-sm-12 col-lg-6">
-                  <label for="inputState" class="form-label">State</label>
-                  <select id="inputState" class="form-select">
+                  <label for="inputState" class="form-label bg-transparent">State</label>
+                  <select id="inputState" class="form-select bg-transparent" required>
                      <option selected>Select State</option>
                      <option>Maharashtra</option>
                      <option>Gujrat</option>
@@ -63,30 +83,29 @@
                </div>
                <div class="col col-md-6 col-sm-12 ">
                   <label for="inputdist" class="form-label">Dist</label>
-                  <input type="text" class="form-control" id="inputdist">
+                  <input type="text" class="form-control bg-transparent" id="inputdist" required>
                </div>
                <div class="col col-md-6 col-sm-12 ">
                   <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
+                  <input type="text" class="form-control bg-transparent" id="inputZip" required>
                </div>
                <!-- <div class="col col-md-6 col-sm-12 ">
                   </div> -->
             </div>
             <div class="row">
-               <div class="col col-md-6 col-sm-12">
+               <div class="col col-md-12 col-sm-12">
                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" id="gridCheck">
-                     <label class="form-check-label" for="gridCheck">
+                     <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                     <label class="form-check-label bg-transparent" for="gridCheck">
                      Check me out
                      </label>
+                  </div class="" >
+                  <a href="/login.html" type="button" class="btn btn-primary d-grid col-lg-6 mx-auto w-25 fs-5">Submit</a>
                   </div>
-                  <button type="submit" class="btn btn-primary">Sign in</button>
                </div>
-               <a href="#" class="card-link">Contact to owner</a>
-               <a href="#" class="card-link">Another link</a>
-            </div>
+         </form>
          </div>
-      </form>
+     
       <script src="js\js\bootstrap.min.js.map"></script>
    </body>
 </html>

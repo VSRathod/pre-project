@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>admin dashboard</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        body {
+            display: flex;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 240px;
+            height: 100vh;
+            padding: 0, 1.7rem;
+            color: #fff;
+            overflow: hidden;
+            transition: all 0.5s linear;
+            background: rgb(113, 99, 186, 255);
+        }
+
+        .sidebar:hover {
+            width: 240px;
+            transition: 0.5s;
+        }
+
+        .logo {
+            height: 80px;
+            padding: 16px;
+        }
+
+        .menu {
+            height: 88%;
+            position: relative;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 1rem;
+            margin: 8px 0;
+            border-radius: 8px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .menu li:hover,
+        .active {
+
+            background: #e0e0e050;
+        }
+
+        .menu a {
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .menu a span {
+            overflow: hidden;
+        }
+
+        .menu a i {
+            font-size: 1.2rem;
+        }
+
+        .logout {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+        }
+
+        /*      main--header body section*/
+        .main--content {
+            position: relative;
+            background: #ebe9e9;
+            width: 100%;
+            padding: 1rem;
+
+        }
+
+        .header--wrapper img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 50%;
+
+        }
+
+        .header--wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background: #fff;
+            padding: 10px 2rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .header--title {
+            color: rgb(111, 99, 186, 255);
+        }
+
+        .user--info {
+            display: flex;
+            align-items: center;
+            gap: 1;
+        }
+
+        .card--container {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            height: 136px;
+            width: 272px;
+
+        }
+
+        .card--wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .main--title {
+            color: rgba(113, 90, 186, 255);
+            padding-bottom: 10px;
+            font-size: 15px
+        }
+
+        .payment--card {
+            background: rgb(299, 223, 223, );
+            border-radius: 10px;
+            padding: 1.2rem;
+            width: 290px;
+            height: 158px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.5 ease-in-out;
+        }
+
+        .payment--card:hover {
+            transform: translate(-5px);
+        }
+
+        .card--header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+
+        }
+
+        .card a {
+            text-decoration: none;
+
+
+        }
+
+        .col a:hover {
+            border-radius: 10px;
+            background-color: rgba(73, 83, 83, 0.533);
+            transition: all 0.8s ease-in-out;
+
+        }
+
+        .discription {
+            font-size: x-small;
+        }
+    </style>
+    <link href="css\css\bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo"><img class="w-50 rounded-pill" src="img/home-logo.png" alt=""></div>
+        <ul class="menu">
+            <li>
+                <a href="dashboard.html">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li >
+                <a href="dashboard1.html">
+                    <i class="bi bi-person-fill"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li class="active"  >
+                <a href="dashboard2.html">
+                    <i class="bi bi-pencil-square"></i>
+                    <span>Edit Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboard3.html">
+                    <i class="bi bi-pencil-square"></i>
+                    <span>Manage User</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-pencil-square"></i>
+                    <span>User list</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-building-fill-add"></i>
+                    <span>Appartment</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-paypal"></i>
+                    <span>Payment</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-gear-fill"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="logout active">
+                <a href="#">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- header main contain -->
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header-title">
+                <span>Admin</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+
+            </div>
+            <div class="dropdown me-1">
+                <button type="button" class="user--info " id="dropdownMenuOffset" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-offset="10,20">
+                    <img src="img/userpro.png" alt="">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">change password</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- card--container -->
+
+        <div class="main-container">
+
+           
+                <div class="container w-75 p-2 col-sm-12 ">
+                <form class="get">
+                  <div class="card main  rounded shadow-lg  p-3  rounded">
+                    <h2 align="center"> <strong>Profile Edit</strong></h2><body class="bg-img" >
+                    
+                     <div class="row g-3">
+                        <div class="col col-md-6 col-sm-12 ">
+                           <label for="inputfirstn" class="form-label">First Name</label>
+                           <input type="text" class="form-control bg-transparent" placeholder="First name" aria-label="First name"required>
+                        </div>
+                        <div class="col col-md-6 col-sm-12">
+                           <label for="inputlastn" class="form-label">Last Name</label>
+                           <input type="text" class="form-control bg-transparent" placeholder="Last name" aria-label="Last name"required>
+                        </div>
+                        <div class="col col-md-6 col-sm-12">
+                           <label for="inputEmail4" class="form-label">Email</label>
+                           <input type="email" class="form-control bg-transparent" id="inputEmail4" placeholder="rathod@gmail.com">
+                           <div class="pl-4 pt-3 row col-md-6 col-sm-12">
+                              <div class="col ">
+                                 <input class="col form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                 <label class="form-check-label bg-transparent" for="flexRadioDefault1"required>
+                                   Male
+                                 </label>
+                               </div>
+                               <div class="col form-check">
+                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                 <label class="form-check-label bg-transparent" for="flexRadioDefault2"required>
+                                   Female
+                                 </label>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-6 col-sm-12">
+                           <label for="inputPassword4" class="form-label">Password</label>
+                           <input type="password" class="form-control bg-transparent" id="inputPassword4" placeholder="xxxxxxxx" required>
+                           <p class="discription text-danger "required>(The password should be at least eight characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ & )</p>
+                        </div>
+                        <div class="col col-md-6 col-sm-12">
+                           <label for="inputAddress" class="form-label">Address *</label>
+                           <textarea class="form-control bg-transparent" id="inputAddress" placeholder="1234 Main St" rows="3"required> 
+                           </textarea>
+                        </div>
+                        <!-- <input type="text" > -->
+                        <!-- <div class="col col-md-6 col-sm-12">
+                           <label for="inputAddress2" class="form-label">Address 2</label>
+                           <textarea class="form-control bg-transparent" id="inputAddress" placeholder="1234 Main St" rows="4"> 
+                           </textarea>
+                        </div> -->
+                        <!-- <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"> -->
+                        <div class="col col-md-6 col-sm-12">
+                           <label for="inputnum" class="form-label">Phone No.</label>
+                           <input type="number" class="form-control bg-transparent" id="inputnum" placeholder="9145xxxxxx" required>
+                        
+                            <label for="inputdist" class="form-label">Dist</label>
+                            <input type="text" class="form-control bg-transparent" id="inputdist" required>
+                         </div>
+                        <div class="col col-md-6 col-sm-12 col-lg-6">
+                           <label for="inputState" class="form-label bg-transparent">State</label>
+                           <select id="inputState" class="form-select bg-transparent" required>
+                              <option selected>Select State</option>
+                              <option>Maharashtra</option>
+                              <option>Gujrat</option>
+                              <option>Rajasthan</option>
+                           </select>
+                        </div>
+                        
+                        <div class="col col-md-6 col-sm-12 ">
+                           <label for="inputZip" class="form-label">Zip</label>
+                           <input type="text" class="form-control bg-transparent" id="inputZip" required>
+                        </div>
+                        <!-- <div class="col col-md-6 col-sm-12 ">
+                           </div> -->
+                     </div>
+                     <div class="p-2">
+                           <a href="/login.html" type="button" class="btn btn-primary d-grid col-lg-6 mx-auto w-25 fs-5">Update</a>
+                        </div>   
+                        
+                  </form>
+                  </div>
+              
+               <script src="js\js\bootstrap.min.js.map"></script>
+            </body>
+            
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

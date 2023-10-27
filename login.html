@@ -6,45 +6,53 @@
       <title>login</title>
       <style>
          .bg-color{
-         background: rgb(10,119,226);
+         /* background: rgb(10,119,226);
          background: linear-gradient(293deg, rgba(10,119,226,0.9669117647058824) 0%, rgba(138,6,161,1) 100%);
-         background-size: cover;
+         background-size: auto; */
+         background: rgb(0,46,64);
+         background: linear-gradient(293deg, rgba(0,46,64,1) 0%, rgba(0,212,255,1) 100%);
+         width: 100%;
+        
          }
          .log{
          padding-left: 10%;
          }
       </style>
       <link href="css\css\bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/icon/bootstrap-icons-1.10.5/font/bootstrap-icons.min.css">
    </head>
    <body class="bg-color">
-      <div class="container">
-         <div class="row pt-5 pb-5">
+      <div class="container-fluid">
+         <div class="row ">
             <div class="col-md-6 col-sm-12">
                <div class="card rounded">
-                  <img class="img-w-100" src="img/login.jpg" alt="img">
+                  <img class="img " src="img/login.jpg" alt="img">
                </div>
             </div>
-            <div class="log col-md-6 col-sm-12 mt-4 pl-4 ">
-               <div class="card w-100 p-4 bg- shadow-lg p-3 mb-5  rounded">
+            <div class="log col-md-6 col-sm-12 mt-4 pl-4  ">
+               <div class="card w-75 m-5 p-5 pt-5 shadow-lg  bg-white rounded">
                   <form action="">
                      <div class="row ">
                         <img class="col logo" style="max-width:25%;" src="img/home-logo.png" alt="img">
                         <h1 class="col pt-4">Admin Login</h1>
                      </div>
-                     <label for="username" class="form-label fs-5">Username</label>
-                     <input type="text" class="form-control glyphicon glyphicon-user fs-5" placeholder="rathodvr@gmail.com" >
+                     <label for="username" class="form-label fs-5">Username  </i></label>
+                     
+                     <i class="bi bi-person-circle d-inline"></i>
+                     <input type="text" class="form-control glyphicon glyphicon-user fs-5 "  placeholder="rathodvr@gmail.com" required>
                      <br>
                      <label for="password" class="form-label fs-5">Password</label>
-                     <input type="password"class="form-control fs-4"placeholder="*********456">
+                     <input type="password"class="form-control fs-4"placeholder="*********456"required>
                      <br>
                      <button type="button" class="btn btn-primary d-grid col-lg-6 mx-auto w-20 fs-5">Submit</button>
                      <br>
-                     <a href="registration.html" class="card-link text-dark fs-5">New User</a>
-                     <a href="#" class="card-link text-dark fs-5">About Us</a>
+                     <a href="registration.html" type="" class="card-link text-dark fs-5">Don't have account?</a>
+                     <a href="#" class="card-link text-dark fs-5">Forget password</a>
                   </form>
                </div>
             </div>
          </div>
       </div>
+      <script src="js\js\bootstrap.min.js.map"></script>
    </body>
 </html>
